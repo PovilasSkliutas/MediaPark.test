@@ -1,0 +1,120 @@
+/* Section Contacts styles */
+
+.contacts {
+    height: 100%;
+    background-color: #f7f3ec;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+.section-title {
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+.contact-area {
+    max-width: 100%;
+    margin-right: 10%;
+    background-color: #ebe1d1;
+}
+.contact-left-section {
+    padding-bottom: 1rem;
+}
+.cont {
+    display: flex;
+    justify-content: flex-start;
+}
+.contact-box {
+    margin-right: 3rem;
+    p {
+        font-size: 14px;
+        color: #5e5a54;
+        }
+}
+.contact-photo {
+    width: 170px;
+    height: 150px;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.img-1 {
+    background-image: url("../img/Laura Zvaliauskaite .png");
+}
+.img-2 {
+    background-image: url("../img/Monika Kuzminskaite.png");
+}
+.contact-name {
+    font-size: 17px;
+    color: #212121;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.contact-mail {
+    padding-top: 1rem;
+    i {
+        margin-right: 10px;
+    }
+}
+.contact-phone i {
+    margin-right: 10px;
+    transform: rotate(90deg);
+}
+.contact-right-section {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+}
+.contact-form {
+    width: 90%;
+    padding-top: 4rem;
+    padding-left: 15%;
+    text-align: left;
+    background-color: #584b3b;
+    position: absolute;
+    height: 500px;
+
+    h3 {
+        font-size: 18px;
+        line-height: 21px;
+        color: #f7f3ec;
+        text-transform: uppercase;
+        font-weight: normal;
+
+        span {
+            font-weight: bold;
+        }
+    }
+    form {
+        margin-top: 2rem;
+    }
+}
+.input-area {
+    margin-top: 40px;
+    margin-bottom: 1rem;
+    p {
+		color: red;
+		font-size: 0.75rem;
+	}
+    input {
+        width: 80%;
+        background-color: inherit;
+        border: none;
+        border-bottom: 1px solid #716658;
+    }
+    input::placeholder {
+        color: #a19990;
+    }
+}
+#submit {
+    margin-top: 40px;
+    color: #f7f3ec;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 20px;
+    background-color: #879f55;
+}
+.hidden {
+    visibility: hidden;
+
+}

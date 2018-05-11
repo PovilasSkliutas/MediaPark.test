@@ -1,0 +1,19 @@
+/* Section Presentation styles */
+
+.presentation {
+    height: 760px;
+    position: relative;
+    z-index: 1;
+    background-image: url("../img/Prezentacija.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.presentation::after {
+    content: ' ';
+    position: absolute;
+    z-index: -1;
+    opacity: 0.15;
+    background-color: #000000;
+}

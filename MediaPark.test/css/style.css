@@ -1,0 +1,399 @@
+/* 01. Base */
+/* Styles compiled with SASS */
+/* Author: Povilas Skliutas */
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  min-width: 470px;
+  margin: 0 auto;
+  font-family: "Open Sans"; }
+
+.container {
+  max-width: 90%;
+  margin: 0 auto; }
+
+h2 {
+  font-size: 30px;
+  color: #4a4846;
+  text-transform: uppercase;
+  font-weight: normal; }
+  h2 span {
+    font-weight: bold; }
+
+/* 02. Partials/Layout */
+/* Footer styles */
+footer {
+  background-color: #302d28; }
+
+footer::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.footer-content a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left; }
+  .footer-content a img {
+    width: 70px; }
+.footer-content p {
+  float: right;
+  margin-top: 25px;
+  color: #6f6c69; }
+  .footer-content p span {
+    color: #acaba9; }
+
+/* Headear styles */
+header {
+  background-color: #463c2f; }
+
+.header-content {
+  position: relative;
+  padding: 1rem 0; }
+
+.navbar-logo {
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #f5f5f5;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.nav-toggle {
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  top: 1rem; }
+  .nav-toggle a {
+    text-decoration: none;
+    color: #c8c1b7; }
+  .nav-toggle a:hover {
+    color: #fff; }
+
+.navbar-collapse {
+  display: none; }
+  .navbar-collapse ul {
+    list-style: none; }
+    .navbar-collapse ul li {
+      text-align: center; }
+      .navbar-collapse ul li a {
+        font-size: 12px;
+        display: block;
+        color: #c8c1b7;
+        text-decoration: none;
+        text-transform: uppercase; }
+      .navbar-collapse ul li a:hover {
+        color: #fff; }
+    .navbar-collapse ul li:hover {
+      background-color: #9eb46a; }
+
+/* 03. Components */
+/* Section About styles */
+.about-us {
+  height: 100%;
+  background-color: #f7f3ec;
+  padding-top: 5%;
+  padding-bottom: 10%; }
+
+.slider {
+  margin-left: 10%;
+  margin-top: 2rem;
+  background-color: #584b3b;
+  padding: 1rem; }
+
+.slider-img {
+  width: 100%;
+  height: 580px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .slider-img img {
+    position: absolute; }
+
+.slider-article {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem; }
+  .slider-article h3 {
+    font-size: 30px;
+    margin-top: 2rem;
+    color: #c8c1b7;
+    text-transform: uppercase;
+    font-weight: normal; }
+    .slider-article h3 span {
+      font-weight: bold; }
+  .slider-article p {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    line-height: 26px;
+    color: #c8c1b7; }
+  .slider-article .audio-button {
+    margin-left: 2rem;
+    color: #c8c1b7;
+    background-color: #584b3b;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .slider-article .audio-button i {
+      margin-right: 10px; }
+  .slider-article .audio-button:hover {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #879f55; }
+
+/* Section Map styles */
+.map {
+  height: 100%;
+  background-color: #ece2d1;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.map-title {
+  padding-bottom: 2rem; }
+
+.map-content {
+  width: 100%; }
+
+.map-left-section {
+  background-color: #f7f3ec;
+  width: 100%;
+  height: 600px; }
+
+.map-navigation ul {
+  background-color: #584b3b;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+  .map-navigation ul li {
+    width: 14.29%;
+    height: 60px;
+    padding: 15px;
+    display: inline-block; }
+  .map-navigation ul li:hover {
+    background-color: #879f55; }
+
+.map-info {
+  padding: 4rem; }
+  .map-info h3 {
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    color: #4a4846;
+    font-size: 18px;
+    font-weight: bold; }
+  .map-info ul {
+    list-style: none; }
+    .map-info ul li {
+      color: #4a4846;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #4a4846;
+      display: flex;
+      justify-content: space-between; }
+    .map-info ul li:last-child {
+      border-bottom: none; }
+
+.map-right-section {
+  width: 100%;
+  height: 600px; }
+  .map-right-section img {
+    width: 100%;
+    overflow: hidden; }
+
+#googleMap {
+  background-image: url("../img/googlemap.png");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.75; }
+
+/* Section Presentation styles */
+.presentation {
+  height: 760px;
+  position: relative;
+  z-index: 1;
+  background-image: url("../img/Prezentacija.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.presentation::after {
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  opacity: 0.15;
+  background-color: #000000; }
+
+/* Section Contacts styles */
+.contacts {
+  height: 100%;
+  background-color: #f7f3ec;
+  padding-top: 5%;
+  padding-bottom: 10%; }
+
+.section-title {
+  padding-bottom: 2rem;
+  font-weight: bold; }
+
+.contact-area {
+  max-width: 100%;
+  margin-right: 10%;
+  background-color: #ebe1d1; }
+
+.contact-left-section {
+  padding-bottom: 1rem; }
+
+.cont {
+  display: flex;
+  justify-content: flex-start; }
+
+.contact-box {
+  margin-right: 3rem; }
+  .contact-box p {
+    font-size: 14px;
+    color: #5e5a54; }
+
+.contact-photo {
+  width: 170px;
+  height: 150px;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: top; }
+
+.img-1 {
+  background-image: url("../img/Laura Zvaliauskaite .png"); }
+
+.img-2 {
+  background-image: url("../img/Monika Kuzminskaite.png"); }
+
+.contact-name {
+  font-size: 17px;
+  color: #212121;
+  font-weight: bold;
+  margin-top: 1rem; }
+
+.contact-mail {
+  padding-top: 1rem; }
+  .contact-mail i {
+    margin-right: 10px; }
+
+.contact-phone i {
+  margin-right: 10px;
+  transform: rotate(90deg); }
+
+.contact-right-section {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 500px; }
+
+.contact-form {
+  width: 90%;
+  padding-top: 4rem;
+  padding-left: 15%;
+  text-align: left;
+  background-color: #584b3b;
+  position: absolute;
+  height: 500px; }
+  .contact-form h3 {
+    font-size: 18px;
+    line-height: 21px;
+    color: #f7f3ec;
+    text-transform: uppercase;
+    font-weight: normal; }
+    .contact-form h3 span {
+      font-weight: bold; }
+  .contact-form form {
+    margin-top: 2rem; }
+
+.input-area {
+  margin-top: 40px;
+  margin-bottom: 1rem; }
+  .input-area p {
+    color: red;
+    font-size: 0.75rem; }
+  .input-area input {
+    width: 80%;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid #716658; }
+  .input-area input::placeholder {
+    color: #a19990; }
+
+#submit {
+  margin-top: 40px;
+  color: #f7f3ec;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 20px;
+  background-color: #879f55; }
+
+.hidden {
+  visibility: hidden; }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .nav-toggle {
+    display: none; }
+
+  .main-menu {
+    flex-direction: row; }
+
+  .navbar-collapse::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+  .navbar-collapse {
+    float: right;
+    margin-top: 10px;
+    text-align: right;
+    display: inline-block; }
+    .navbar-collapse ul li {
+      display: inline-block; }
+      .navbar-collapse ul li a {
+        padding-left: 1rem; }
+    .navbar-collapse ul li:hover {
+      background-color: #463c2f; } }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .slider {
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: space-between; }
+
+  .slider-article {
+    margin-top: 7%;
+    width: 50%; }
+
+  .slider-img {
+    margin: 5% 5% 0 5%;
+    width: 50%; }
+
+  .map-content {
+    flex-direction: row;
+    display: flex;
+    justify-content: center; }
+
+  .contacts {
+    padding-bottom: 5%; }
+
+  .contact-content {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between; }
+
+  .contact-left-section {
+    width: 50%;
+    margin-top: 5%; }
+
+  .contact-right-section {
+    width: 50%;
+    margin-top: 4%;
+    margin-left: 50px; } }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/*# sourceMappingURL=style.css.map */

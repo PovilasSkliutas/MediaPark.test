@@ -1,0 +1,74 @@
+/* Section Map styles */
+
+.map {
+    height: 100%;
+    background-color: #ece2d1;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.map-title {
+    padding-bottom: 2rem;
+}
+.map-content {
+    width: 100%;
+}
+.map-left-section {
+    background-color: #f7f3ec;
+    width: 100%;
+    height: 600px;
+}
+.map-navigation {
+    ul {
+        background-color: #584b3b;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        li {
+            width: 14.29%;
+            height: 60px;
+            padding: 15px;
+            display: inline-block;
+        }
+        li:hover {
+            background-color: #879f55;
+        }
+    }
+}
+.map-info {
+    padding: 4rem;
+    h3 {
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+        color: #4a4846;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    ul {
+        list-style: none;
+        li {
+            color: #4a4846;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #4a4846;
+            display: flex;
+            justify-content: space-between;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+    }
+}
+.map-right-section {
+    width: 100%;
+    height: 600px;
+    img {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+#googleMap {
+    background-image: url("../img/googlemap.png");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.75;
+}

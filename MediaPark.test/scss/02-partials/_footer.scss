@@ -1,0 +1,27 @@
+/* Footer styles */
+footer {
+    background-color: #302d28;
+}
+footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer-content {
+    a {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        float: left;
+        img {
+            width: 70px;
+        }
+    }
+    p {
+        float: right;
+        margin-top: 25px;
+        color: #6f6c69;
+        span {
+            color: #acaba9;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+/* Styles compiled with SASS */
+/* Author: Povilas Skliutas */
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-width: 470px;
+    margin: 0 auto;
+    font-family: "Open Sans";
+}
+.container {
+    //border: 1px solid red;
+    max-width: 90%;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 30px;
+    color: #4a4846;
+    text-transform: uppercase;
+    font-weight: normal;
+    span {
+        font-weight: bold;
+    }
+}

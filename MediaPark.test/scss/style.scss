@@ -1,0 +1,16 @@
+/* 01. Base */
+@import "01-base/fonts";
+@import "01-base/settings";
+
+/* 02. Partials/Layout */
+@import "02-partials/footer";
+@import "02-partials/header";
+
+/* 03. Components */
+@import "03-components/section-1-about";
+@import "03-components/section-2-map";
+@import "03-components/section-3-presentation";
+@import "03-components/section-4-contacts";
+
+
+@import "04-media/media-query";
